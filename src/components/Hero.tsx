@@ -1,19 +1,24 @@
+import { HighlightText } from './ui/HighlightText';
+import { GlowButton } from './ui/GlowButton';
 export function Hero() {
 	return (
-		<section className="flex h-screen items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-			<div className="space-y-6 text-center">
-				<h1 className="font-bold text-6xl">Felipe Borgaço</h1>
-				<p className="text-2xl">Desenvolvedor Full Stack Jr</p>
-				<button
-					type="button"
-					onClick={() => window.scrollTo({
-						top: document.getElementById('about')?.offsetTop || 0,
-						behavior: 'smooth'
-					})}
-					className="rounded-lg bg-white px-8 py-3 font-semibold text-blue-600 transition-all hover:bg-opacity-90"
-				>
-					Conheça meu trabalho
-				</button>
+		<section className="min-h-screen flex items-center justify-center px-4">
+			<div className="max-w-4xl w-full text-center rounded-lg p-6">
+				<h1 className="text-5xl md:text-7xl font-bold mb-6">
+					Olá, eu sou <HighlightText variant="gradient" color="accent">Felipe</HighlightText>
+				</h1>
+				<p className="text-xl md:text-2xl mb-8 text-gray-600">
+					Um <HighlightText color="primary">Desenvolvedor Full Stack</HighlightText> apaixonado por criar
+					experiências web incríveis e <HighlightText color="secondary">soluções inovadoras</HighlightText>
+				</p>
+				<div className="flex gap-4 justify-center">
+					<GlowButton variant="primary" size="lg">
+						Ver Projetos
+					</GlowButton>
+					<GlowButton variant="secondary" size="lg">
+						Contato
+					</GlowButton>
+				</div>
 			</div>
 		</section>
 	);
