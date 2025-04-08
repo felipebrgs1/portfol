@@ -11,11 +11,11 @@ export function About() {
 					<div className="space-y-6 text-center max-w-2xl">
 						<p className="text-lg text-gray-600">
 							Sou um desenvolvedor apaixonado por criar soluções tecnológicas inovadoras.
-							Com experiência em <HighlightText color="primary">desenvolvimento web</HighlightText>, 
+							Com experiência em <HighlightText color="primary">desenvolvimento web</HighlightText>,
 							busco sempre entregar produtos de alta qualidade e performance.
 						</p>
 						<p className="text-lg text-gray-600">
-							Minha jornada na programação começou com <HighlightText color="accent">curiosidade</HighlightText> 
+							Minha jornada na programação começou com <HighlightText color="accent">curiosidade</HighlightText>
 							e hoje se transformou em uma paixão por resolver problemas complexos através do código.
 						</p>
 					</div>

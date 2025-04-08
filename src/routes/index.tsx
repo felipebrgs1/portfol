@@ -6,6 +6,7 @@ import { Skills } from '@components/Skills'
 import { Projects } from '@components/Projects'
 import { Contact } from '@components/Contact'
 import { Navigation } from '@components/Navigation'
+import { Footer } from '@components/Footer'
 
 export const Route = createFileRoute('/')({
 	component: App,
@@ -102,6 +103,8 @@ function App() {
 			>
 				<Contact />
 			</div>
+
+			<Footer />
 		</div>
 	)
 }
