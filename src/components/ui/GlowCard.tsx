@@ -23,11 +23,9 @@ export function GlowCard({
   return (
     <div
       className={cn(
-        'relative rounded-lg p-6 transition-all duration-300 hover:scale-[1.02]',
+        'relative rounded-lg p-6 transition-all duration-300',
         'before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-r before:from-transparent before:via-transparent before:to-transparent',
         'after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-r after:from-transparent after:via-transparent after:to-transparent',
-        'hover:before:from-[rgba(99,102,241,0.1)] hover:before:via-[rgba(99,102,241,0.1)] hover:before:to-[rgba(99,102,241,0.1)]',
-        'hover:after:from-[rgba(99,102,241,0.1)] hover:after:via-[rgba(99,102,241,0.1)] hover:after:to-[rgba(99,102,241,0.1)]',
         className
       )}
       style={{

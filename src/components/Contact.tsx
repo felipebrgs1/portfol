@@ -1,11 +1,10 @@
-import { GlowCard } from './ui/GlowCard';
 import { GlowButton } from './ui/GlowButton';
 import { HighlightText } from './ui/HighlightText';
 
 export function Contact() {
 	return (
 		<section className="min-h-screen flex items-center justify-center px-4 py-20">
-			<GlowCard className="max-w-2xl w-full" glowColor="rgba(99, 102, 241, 0.5)">
+			<div className="max-w-2xl w-full bg-white rounded-lg shadow-lg p-8">
 				<h2 className="text-4xl font-bold mb-8 text-center">
 					Entre em <HighlightText variant="gradient" color="primary">Contato</HighlightText>
 				</h2>
@@ -52,10 +51,12 @@ export function Contact() {
 				<div className="mt-8 text-center">
 					<p className="text-gray-600">
 						Ou entre em contato através do{' '}
-						<HighlightText color="accent">LinkedIn</HighlightText>
+						<a href="https://www.linkedin.com/in/felipeborgaco/" target="_blank" rel="noopener noreferrer">
+							<HighlightText color="accent">LinkedIn</HighlightText>
+						</a>
 					</p>
 				</div>
-			</GlowCard>
+			</div>
 		</section>
 	);
 }

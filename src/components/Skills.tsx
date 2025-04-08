@@ -4,17 +4,17 @@ import { HighlightText } from './ui/HighlightText';
 const skills = [
 	{
 		category: 'Frontend',
-		items: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'HTML/CSS'],
+		items: ['React', 'Vue', 'Javascript/TypeScript', 'Tailwind CSS', 'Next.js', 'HTML/CSS'],
 		color: 'primary'
 	},
 	{
 		category: 'Backend',
-		items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+		items: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'REST APIs'],
 		color: 'secondary'
 	},
 	{
 		category: 'Ferramentas',
-		items: ['Git', 'Docker', 'VS Code', 'Figma', 'Jest'],
+		items: ['Git', 'Docker', 'VS Code', 'Figma', 'Jira'],
 		color: 'accent'
 	}
 ];
@@ -28,13 +28,12 @@ export function Skills() {
 				</h2>
 				<div className="grid md:grid-cols-3 gap-8">
 					{skills.map((skillGroup) => (
-						<GlowCard 
+						<GlowCard
 							key={skillGroup.category}
-							glowColor={`rgba(${
-								skillGroup.color === 'primary' ? '99, 102, 241' :
+							glowColor={`rgba(${skillGroup.color === 'primary' ? '99, 102, 241' :
 								skillGroup.color === 'secondary' ? '168, 85, 247' :
-								'236, 72, 153'
-							}, 0.5)`}
+									'236, 72, 153'
+								}, 0.5)`}
 						>
 							<h3 className="text-2xl font-semibold mb-4">
 								<HighlightText color={skillGroup.color as any}>
@@ -44,11 +43,10 @@ export function Skills() {
 							<ul className="space-y-2">
 								{skillGroup.items.map((skill) => (
 									<li key={skill} className="flex items-center gap-2">
-										<span className={`text-${
-											skillGroup.color === 'primary' ? 'indigo' :
+										<span className={`text-${skillGroup.color === 'primary' ? 'indigo' :
 											skillGroup.color === 'secondary' ? 'purple' :
-											'pink'
-										}-500`}>•</span>
+												'pink'
+											}-500`}>•</span>
 										{skill}
 									</li>
 								))}
